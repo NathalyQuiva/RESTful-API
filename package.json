@@ -1,0 +1,16 @@
+{
+  "name": "restful-api",
+  "version": "1.0.0",
+  "description": "RESTful API is an interface that two computer systems use to exchange information securely over the internet. Most business applications have to communicate with other internal and third-party applications to perform various tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  }
+}
