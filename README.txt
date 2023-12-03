@@ -24,6 +24,7 @@ RESTful API is an interface that two computer systems use to exchange informatio
 16. Use method with urlencoded for receive simple input data for example.
 17. Setting the port, for we can to access to the port in anyplace of the app.
 18. Access to the port in the listen using: app.get('port') instead of 3000.
-19. Up to this point I have been canceled and initializing the server every time, to avoid this I can npm i nodemon as a developer dependency.
+19. Up to this point I have been canceled and initializing the server every time, to avoid this I can npm i nodemon -D as a developer dependency.
+20. Configuring the port for cloud technologies such as: Heroku and Azure that give us a defined port. We should write app.set('port', process.env.PORT || 3000) (The | is using the key where is in the left of 1)
 
 
