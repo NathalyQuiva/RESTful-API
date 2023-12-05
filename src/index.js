@@ -9,7 +9,7 @@ app.set('json spaces', 2);
 
 //Routes
 app.use(require('./routes/index'));
-app.use(require('./routes/movies'));
+app.use('/api/movies', require('./routes/movies'));
 
 //Middleware 
 app.use(morgan('dev'));
