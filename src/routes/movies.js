@@ -8,10 +8,15 @@ router.get('/', (req, res) => {
     res.send(movies)
 });
 
-router.post('/', (req, res) =>{
-    (console.log(req.body));
-    res.send('recibido');
-});
+router.post('/', (req, res) => {
+    const {id, tittle, director, year, rating} = req.body;
+    if (tittle && director && year && rating) {
+        res.json('saved');
+    } else {
+        res.send('Wrong request');
+    }
+    }
+);
 
 
 module.exports = router; 
