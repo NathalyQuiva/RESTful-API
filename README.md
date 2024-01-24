@@ -1,4 +1,4 @@
-# My RESTful API Project
+# My RESTful Api Movies Project
 
 <div style="display: flex; justify-content: space-between;">
   <a href="https://nodejs.org/">
@@ -23,7 +23,11 @@ This project is a RESTful API developed about movies and users using Node.js, Ex
 - Validator for data validation.
 - Underscore.js for utility functions.
 
-## Usage
+## Deployment
+
+You can access the Render deployed version of this API on [Render](https://your-render-deployment-url-here).
+
+## Usage for developers
 Make sure the server is running, then access the API endpoints using tools like Postman.
 
 ## Endpoints
