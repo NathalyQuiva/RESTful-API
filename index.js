@@ -17,6 +17,10 @@ app.use(require('./src/routes/index'));
 app.use('/api/movies', require('./src/routes/movies'));
 app.use('/api/users', require('./src/routes/users'))
 
+app.get('/', (req, res) => {
+    res.send('Helo')
+})
+
 //Starting server
 app.listen(app.get('port'), ()=>{
     console.log(`Listen on port ${app.get('port')}`);
