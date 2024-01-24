@@ -1,7 +1,7 @@
 const express = require ('express');
 const app = express();
 const morgan = require ('morgan');
-
+const movies = require('./sample.json');
 
 //Setting
 app.set('port', process.env.PORT || 3006);
@@ -16,6 +16,9 @@ app.use(express.json());
 app.use(require('./routes/index'));
 app.use('/api/movies', require('./routes/movies'));
 app.use('/api/users', require('./routes/users'))
+app.get('/', (req, res) => {
+    res.send(movies)
+});
 
 //Starting server
 app.listen(app.get('port'), ()=>{
