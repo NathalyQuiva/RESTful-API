@@ -25,7 +25,7 @@ This project is a RESTful API developed about movies and users using Node.js, Ex
 
 ## Deployment
 
-You can access the Render deployed version of this API on [Render](https://your-render-deployment-url-here).
+You can access the Render deployed version of this API on [Render](https://restful-api-movies-6.onrender.com).
 
 ## Usage for developers
 Make sure the server is running, then access the API endpoints using tools like Postman.

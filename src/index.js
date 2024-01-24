@@ -13,12 +13,13 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 //Routes
-app.use(require('./routes/index'));
-app.use('/api/movies', require('./routes/movies'));
-app.use('/api/users', require('./routes/users'))
 app.get('/', (req, res) => {
     res.send(movies)
 });
+app.use(require('./routes/index'));
+app.use('/api/movies', require('./routes/movies'));
+app.use('/api/users', require('./routes/users'))
+
 
 //Starting server
 app.listen(app.get('port'), ()=>{
