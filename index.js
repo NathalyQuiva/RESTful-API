@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 //Routes
-app.use(require('./routes/index'));
+app.use(require('./src/routes/index'));
 app.use('/api/movies', require('./src/routes/movies'));
 app.use('/api/users', require('./src/routes/users'))
 
