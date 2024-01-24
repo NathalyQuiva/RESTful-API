@@ -32,8 +32,9 @@ Make sure the server is running, then access the API endpoints using tools like 
 
 ## Endpoints
 
-- GET /api/users: Retrieve all users.
+- GET /api/users: Retrieve all users (That uses node-fetch to asynchronously fetch jsonplaceholder information).
 - GET /api/movies: Retrieve all movies.
 - POST /api/movies: Create a movie.
 - PUT /api/movies/:id: Update user details.
 - DELETE /api/movies/:id: Delete a movie.
+
